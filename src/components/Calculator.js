@@ -10,6 +10,7 @@ const Calculator = () => {
   const handleClear = () => {
     setResult("");
   };
+  console.log("Hello....");
 
   const handleCalculate = () => {
     try {
