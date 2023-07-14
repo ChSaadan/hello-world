@@ -1,10 +1,12 @@
 .App {
   text-align: center;
+  background-color: white;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +37,56 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.form-part label {
+  display: block;
+  margin: 10px 0 0;
+}
+
+.calculator {
+  background-color: rgba(170, 17, 17, 0.452);
+  display: square;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-left: 500px;
+  margin-right: 500px;
+  margin-bottom: 100px;
+}
+
+.calculator__input {
+  width: 430px;
+  height: 70px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  font-size: 30px;
+  border-radius: 10%;
+}
+
+.calculator button {
+  border-radius: 50%;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.calculator__clear-button {
+  background-color: red;
+  color: white;
+}
+
+.calculator__calculate-button {
+  background-color: green;
+  color: white;
+}
+
+.calculator__operator-button {
+  background-color: blue;
+  color: white;
+  
 }
