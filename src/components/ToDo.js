@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-function ExamCode() {
+function ToDo() {
   const [initialValues, setInitialValues] = useState({
     name: "",
     email: "",
@@ -9,7 +9,6 @@ function ExamCode() {
   const [formValues, setFormValues] = useState([]);
 
   const submitForm = () => {
-    let prevFormValues = [];
     setFormValues((prevFormValues) => {
       let updatedstate = [...prevFormValues, initialValues];
       setLocalStorage("formValues", updatedstate);
@@ -39,7 +38,7 @@ function ExamCode() {
 
   return (
     <>
-      <div className="header">
+      <div className="App">
         <h2>Please fill in the Form</h2>
         <div>
           Name:
@@ -119,4 +118,4 @@ function ExamCode() {
   );
 }
 
-export default ExamCode;
+export default ToDo;

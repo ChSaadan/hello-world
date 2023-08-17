@@ -6,7 +6,7 @@ function EffectCode() {
 
   useEffect(() => {
     axios.get("https://jsonplaceholder.typicode.com/posts").then((response) => {
-      setData(response.data[0].title);
+      setData(response.data[2].title);
       console.log("API");
     });
   }, []);
